@@ -1,3 +1,5 @@
+package src;
+
 public class RegistreNotesMOD {
         public static void main(String[] args){
             RegistreNotesMOD programa = new RegistreNotesMOD();

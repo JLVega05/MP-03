@@ -1,3 +1,5 @@
+package src;
+
 public class CalculArrayReals {
     public double calcularMaxim(double[] array) {
         double max = array[0];
