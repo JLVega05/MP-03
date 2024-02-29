@@ -2,9 +2,13 @@ package UF4.Empresa;
 
 public class Encarrec {
     private int dia =0;
-    private int mes =0;
+    private int mes=0;
     private int hora=0;
     private int minuts = 0;
+
+    //Constructor
+    public Encarrec() {}
+
     //Getters Setters
     public int getDia() {
         return dia;

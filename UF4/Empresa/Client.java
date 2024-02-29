@@ -5,6 +5,15 @@ public class Client {
     private String adreca ="";
     private String telefon ="";
     private String email ="";
+
+    //Constructors
+    public Client() {}
+    public Client(String nom, String adreca, String telefon, String email) {
+        this.nom = nom;
+        this.adreca = adreca;
+        this.telefon = telefon;
+        this.email = email;
+    }
     //Getters Setters
     public String getEmail(){
         return email;
@@ -32,10 +41,10 @@ public class Client {
     }
 
     // Funcions
-    public void assignarEncarrec(Encarrec e){
-
+    public void assignarEncarrec(Encarrec e) {
     }
-    public void anulaEncarrec(Encarrec e){
 
+    public void anulaEncarrec(Encarrec e) {
     }
 }
+
