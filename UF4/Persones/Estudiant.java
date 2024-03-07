@@ -1,6 +1,6 @@
 package UF4.Persones;
 
-public class Estudiant extends Persona {
+public class Estudiant {
     private String curs;
     private String assignatures;
     private String escola;
@@ -8,13 +8,8 @@ public class Estudiant extends Persona {
 
     
 
-    public Estudiant(String id, int edad, String nom, String curs, String assignatures, String escola, int notes) {
-        super(id, edad, nom);
-        this.curs = curs;
-        this.assignatures = assignatures;
-        this.escola = escola;
-        this.notes = notes;
-    }
+
+    
     public String getCurs() {
         return curs;
     }
