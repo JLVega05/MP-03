@@ -11,7 +11,7 @@ public class Main {
         Cercle cercle = new Cercle(5);
         Rectangle rectangle = new Rectangle(2, 3);
 
-        // Mostrar información de cada figura
+        // Muestra información de cada figura
         triangle.imprimirDades();
         quadrat.imprimirDades();
         trapezi.imprimirDades();
