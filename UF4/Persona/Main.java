@@ -16,7 +16,7 @@ public class Main {
         String ReportDeveloper = developer.generarReport() + "Good";
         String ReportProgrammer = programmer.generarReport() + "Excellent";
 
-
+        
         //System outs
         System.out.println("Manager's Bonus: $" + BonusManager);
         System.out.println("Developer's Bonus: $" + BonusDeveloper);

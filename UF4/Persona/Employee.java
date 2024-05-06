@@ -49,7 +49,7 @@ public class Employee {
     }
 
     
-    public double calcularBonus() {
+    /* public double calcularBonus() {
         double bonus = 0;
         if (puestoTrabajo.equalsIgnoreCase("programmer")) {
             bonus = salario * 0.12;
@@ -61,9 +61,12 @@ public class Employee {
             System.out.println("Couldn't calculate bonus");
         }
         return bonus;
+    } */
+    public double calcularBonus() {
+        return double bonus = 0;
     }
 
-    public String generarReport() {
+    /* public String generarReport() {
         String report = "";
         if (puestoTrabajo.equalsIgnoreCase("manager")) {
             report = "Performance report for Manager " + name + ": ";
@@ -73,5 +76,8 @@ public class Employee {
             report = "Performance report for Programmer " + name + ": ";
         }
         return report;
+    } */
+    public String generarReport() {
+        return String report = "";
     }
 }
