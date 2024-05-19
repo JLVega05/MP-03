@@ -1,4 +1,4 @@
-package UF3.Fitxers;
+package Fitxers;
 import java.io.File;
 import java.util.Scanner;
 import java.io.PrintWriter;
@@ -12,8 +12,8 @@ public class GenerarFitxerNotes {
 	}
 	public void inici() {
 		try {
-			File f = new File("C:\\Users\\jairo\\OneDrive\\Clase\\MP-03\\UF3\\GenerarNotes\\Notes.txt");
-			File g = new File("C:\\Users\\jairo\\OneDrive\\Clase\\MP-03\\UF3\\GenerarNotes\\NotaMitja.txt");
+			File f = new File("C:\\Users\\jairo\\OneDrive\\Clase\\MP-03\\UF3\\Fitxers\\Notes.txt");
+			File g = new File("C:\\Users\\jairo\\OneDrive\\Clase\\MP-03\\UF3\\Fitxers\\NotaMitja.txt");
 			Scanner lector = new Scanner(f);
 			PrintWriter escritor = new PrintWriter(g);
 

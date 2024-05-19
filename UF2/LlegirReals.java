@@ -1,3 +1,5 @@
+package UF2;
+
 import java.util.Scanner;
 public class LlegirReals {
   public static void main (String[] args) {

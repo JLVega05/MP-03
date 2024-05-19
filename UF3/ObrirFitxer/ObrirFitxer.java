@@ -10,6 +10,7 @@ public class ObrirFitxer {
             File f = new File("C:\\Users\\jairo\\OneDrive\\Clase\\MP-03\\UF3\\ObrirFitxer\\Document.txt");
             Scanner lector = new Scanner(f);
             System.out.println("Fitxer obert correctament");
+            lector.close();
         }
         catch (Exception e){
             System.out.println("Error: " + e);

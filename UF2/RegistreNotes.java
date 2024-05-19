@@ -1,3 +1,5 @@
+package UF2;
+
 public class RegistreNotes {
     public static void main(String[] args) {
         RegistreNotes programa = new RegistreNotes();

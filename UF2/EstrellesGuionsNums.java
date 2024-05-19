@@ -1,3 +1,5 @@
+package UF2;
+
 public class EstrellesGuionsNums {
     public static void main(String[] args) {
         EstrellesGuionsNums programa = new EstrellesGuionsNums();

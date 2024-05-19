@@ -14,7 +14,5 @@ public class CalcularAreesMOD {
             double area = calcular.opcioUsuari();
             CalculArees fin = new CalculArees();
                 calcular.resultat(area);
-            }
-        }
-    }
-}
+            }    }
+    
