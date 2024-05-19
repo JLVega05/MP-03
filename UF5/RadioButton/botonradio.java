@@ -27,7 +27,7 @@ public class botonradio extends JFrame {
 
     private void colocarLabels(){
         JLabel titulo = new JLabel("Lenguajes:");
-        titulo.setBounds(50, 20, 200, 50);;
+        titulo.setBounds(50, 20, 200, 30);;
         panel.add(titulo);
     }
     private void colocarPaneles(){

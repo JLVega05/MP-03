@@ -1,3 +1,4 @@
+package Dropdown;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -9,7 +10,7 @@ public class lista extends JFrame {
     private JButton b1;
     public lista() {
         this.setSize(400, 300);
-        setTitle("Lenguajes");
+        setTitle("ComboBox Example");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         iniciarComponentes();
     }

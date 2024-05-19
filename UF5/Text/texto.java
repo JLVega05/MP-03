@@ -13,7 +13,6 @@ public class texto extends JFrame {
 
     public texto(){
         this.setSize(500, 300);
-        setTitle("Lenguajes");
         setDefaultCloseOperation(EXIT_ON_CLOSE); 
         iniciarComponentes();
     }
@@ -85,9 +84,7 @@ public class texto extends JFrame {
             }
 
             @Override
-            public void keyPressed(KeyEvent e) {
-                // No implementar
-            }
+            public void keyPressed(KeyEvent e) {}
 
             @Override
             public void keyReleased(KeyEvent e) {
