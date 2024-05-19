@@ -1,43 +1,62 @@
-
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class lista extends JFrame {
     public JPanel panel;
-    public void lista (){
-        
-        this.setSize(500, 500);
+    private JLabel titulo;
+    private JComboBox<String> listaDesplegable;
+    private JButton b1;
+    public lista() {
+        this.setSize(400, 300);
         setTitle("Lenguajes");
-        setDefaultCloseOperation(EXIT_ON_CLOSE); 
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         iniciarComponentes();
     }
 
-    private void iniciarComponentes(){
+    private void iniciarComponentes() {
         colocarPaneles();
         colocarLabels();
         colocarBotones();
         colocarListasDesplegables();
     }
 
-    private void colocarBotones(){
-        JButton b1 = new JButton("Show");
-        b1.setBounds(150, 50, 80, 20);
+    private void colocarBotones() {
+        b1 = new JButton("Show");
+        b1.setBounds(250, 80, 80, 20);
         panel.add(b1);
+
+        oyenteAccion();
     }
 
-    private void colocarLabels(){
-        JLabel titulo = new JLabel("Programming language Selected: ");
-        titulo.setBounds(50, 20, 200, 50);;
+    private void colocarLabels() {
+        titulo = new JLabel("Programming language Selected: ");
+        titulo.setBounds(50, 20, 300, 50);
         panel.add(titulo);
     }
-    private void colocarPaneles(){
+
+    private void colocarPaneles() {
         panel = new JPanel();
         panel.setLayout(null);
         this.getContentPane().add(panel);
     }
 
-    private void colocarListasDesplegables(){
-        String[] lenguajes = {"C","C++","C#","Java","PHP"};
-        JComboBox listaDesplegable = new JComboBox<>(lenguajes);
-        listaDesplegable.setBounds(50, 40, 80, 20); 
+    private void colocarListasDesplegables() {
+        String[] lenguajes = {"C", "C++", "C#", "Java", "PHP"};
+        listaDesplegable = new JComboBox<>(lenguajes);
+        listaDesplegable.setBounds(50, 80, 100, 20);
+        panel.add(listaDesplegable);
+    }
+
+    private void oyenteAccion() {
+        ActionListener oyenteAccion = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String lenguajeSeleccionado = (String) listaDesplegable.getSelectedItem();
+                titulo.setText("Programming language Selected: " + lenguajeSeleccionado);
+            }
+        };
+
+        b1.addActionListener(oyenteAccion);
     }
 }
